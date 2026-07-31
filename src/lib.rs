@@ -89,9 +89,16 @@ impl zed::Extension for RouterOsExtension {
 
         let entry = self.install(id)?;
 
+        // Zed runs the command from the worktree, not from the extension's own
+        // directory, so a relative path would resolve against the user's
+        // project and fail.
+        let absolute = std::env::current_dir()
+            .map_err(|e| format!("cannot resolve the extension directory: {e}"))?
+            .join(&entry);
+
         Ok(zed::Command {
             command: zed::node_binary_path()?,
-            args: vec![entry, "--stdio".into()],
+            args: vec![absolute.to_string_lossy().into_owned(), "--stdio".into()],
             env: vec![],
         })
     }
