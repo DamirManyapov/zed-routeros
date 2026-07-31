@@ -12,7 +12,8 @@ paths, commands, properties, strings, variables and comments, plus outline
 navigation by config section (`cmd-shift-o`), folding, bracket matching and
 auto-indent.
 
-**Completion and diagnostics** via [routeros-lsp](https://github.com/DamirManyapov/routeros-lsp):
+**Completion and diagnostics** via [routeros-lsp](https://github.com/DamirManyapov/routeros-lsp),
+downloaded automatically on first use:
 
 - `/interface/wire` → `wireguard`, `wireless`
 - `/interface/wireguard/add ` → `mtu=`, `private-key=`, `vrf=`
