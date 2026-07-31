@@ -1,10 +1,14 @@
 id = "routeros"
 name = "RouterOS Script"
-version = "0.1.0"
+version = "0.2.0"
 schema_version = 1
 authors = ["Damir Manyapov <2977374@gmail.com>"]
-description = "MikroTik RouterOS .rsc syntax highlighting"
+description = "MikroTik RouterOS .rsc support: syntax highlighting and offline completion"
 repository = "https://github.com/DamirManyapov/zed-routeros"
+
+[language_servers.routeros-lsp]
+name = "RouterOS LSP"
+languages = ["RouterOS Script"]
 
 [grammars.routeros]
 repository = "https://github.com/DamirManyapov/tree-sitter-routeros"
