@@ -1,0 +1,11 @@
+id = "routeros"
+name = "RouterOS Script"
+version = "0.1.0"
+schema_version = 1
+authors = ["Damir Manyapov <2977374@gmail.com>"]
+description = "MikroTik RouterOS .rsc syntax highlighting"
+repository = "https://github.com/DamirManyapov/zed-routeros"
+
+[grammars.routeros]
+repository = "https://github.com/DamirManyapov/tree-sitter-routeros"
+rev = "71d2e443af95f9b2011f3b1e5c0b917e0d82aa9d"

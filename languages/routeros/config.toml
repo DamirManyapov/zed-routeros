@@ -1,0 +1,35 @@
+name = "RouterOS Script"
+grammar = "routeros"
+path_suffixes = ["rsc"]
+line_comments = ["# "]
+autoclose_before = ";:.,=}])>  \t"
+
+# RouterOS property names are hyphenated (allowed-address, in-interface-list),
+# so the hyphen must count as part of a word. Without this, completion and
+# word-wise motion break every name in half.
+word_characters = ["-", "."]
+
+[[brackets]]
+start = "{"
+end = "}"
+close = true
+newline = true
+
+[[brackets]]
+start = "["
+end = "]"
+close = true
+newline = false
+
+[[brackets]]
+start = "("
+end = ")"
+close = true
+newline = false
+
+[[brackets]]
+start = "\""
+end = "\""
+close = true
+newline = false
+not_in = ["string", "comment"]
