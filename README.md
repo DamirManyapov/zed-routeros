@@ -27,6 +27,11 @@ Diagnostics:
 - `$c` with no `:local`/`:global` — undeclared variable, following RouterOS
   scoping rules (a function body sees neither the caller's locals nor anything
   but its own scopes and globals)
+- `/ip // address` — malformed path, and likewise `=value` or `key==value`
+
+Each diagnostic comes with a quick fix (⌘.): a close spelling for an unknown
+segment, the bound a number overshot, a `:local` declaration, or removal of the
+redundant assignment.
 
 The command tree is bundled with the language server, merged from 60 RouterOS
 releases (7.9 through 7.24), so completion is not tied to any one version.
