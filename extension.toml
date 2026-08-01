@@ -1,6 +1,6 @@
 id = "routeros"
 name = "RouterOS Script"
-version = "0.5.0"
+version = "0.5.1"
 schema_version = 1
 authors = ["Damir Manyapov <2977374@gmail.com>"]
 description = "MikroTik RouterOS .rsc support: syntax highlighting and offline completion"
@@ -12,4 +12,4 @@ languages = ["RouterOS Script"]
 
 [grammars.routeros]
 repository = "https://github.com/DamirManyapov/tree-sitter-routeros"
-rev = "f1d156aee9b75900d41cde193d964c2b3bd373a4"
+rev = "302ddca578b7e48ac2562474f7c0666c032841f3"
