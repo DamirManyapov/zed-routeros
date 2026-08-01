@@ -1,6 +1,6 @@
 id = "routeros"
 name = "RouterOS Script"
-version = "0.2.1"
+version = "0.3.0"
 schema_version = 1
 authors = ["Damir Manyapov <2977374@gmail.com>"]
 description = "MikroTik RouterOS .rsc support: syntax highlighting and offline completion"
